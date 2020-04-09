@@ -33,7 +33,8 @@ module.exports = {
   formatText,
   escape,
   escapeCode,
-  updateBiblio
+  updateBiblio,
+  getTerms
 };
 
 function highlight(code, lang) {
