@@ -1,4 +1,4 @@
-var {print, formatText, escape, escapeCode, updateBiblio, getTerms} = require('./print');
+var {print, ...others} = require('./print');
 var parse = require('./parse');
 var visit = require('./visit');
 
@@ -13,10 +13,6 @@ module.exports = {
   print,
   parse,
   visit,
-  formatText,
-  escape,
-  escapeCode,
-  updateBiblio,
-  getTerms
+  ...others
 }
 

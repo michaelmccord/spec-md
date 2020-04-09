@@ -34,7 +34,8 @@ module.exports = {
   escape,
   escapeCode,
   updateBiblio,
-  getTerms
+  getTerms,
+  anchorize
 };
 
 function highlight(code, lang) {
