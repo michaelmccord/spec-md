@@ -27,7 +27,7 @@ yargs.strict()
   }, 
   (argv)=>{
     return argv.package(argv._, 
-                specmd.parse(argv.markdown))
+                specmd.parse(argv.markdown), argv.metadata ? argv.metadata : {})
                 .then(_=>process.stdout.write(_))
                 .catch(errorExit);
   })
